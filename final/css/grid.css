@@ -1,0 +1,83 @@
+@media (min-device-width: 1025px) {
+	#container {
+
+	min-width: 640px;
+	max-width: 960px;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1em;
+
+	grid-template-areas:
+		"title title user-info"
+		"publish publish login"
+		"main main main"
+		"main main main"
+	;
+}
+
+#title {
+	grid-area: title;
+}
+
+#user-info {
+	grid-area: user-info;
+}
+
+#login {
+	grid-area: login;
+}
+
+#publish-post {
+	grid-area: publish;
+}
+
+#sign-up,
+#profile,
+#posts {
+	grid-area: main;
+}
+}
+/* mobile */
+@media (max-device-width: 414px) {
+
+	body {
+		font-size: 20px;
+		line-height: 1.4;
+	}
+
+	button, input {
+		font-size: 1.25em;
+	}
+
+	#container {
+
+		display: flex;
+		flex-direction: column;
+		height: auto;
+
+	}
+
+}
+
+/* tablet */
+@media (min-device-width: 415px) and (max-device-width: 719px) {
+	#container {
+		min-width: inherit;
+		max-width: 100%;
+
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas: 
+			"title user-info"
+			"publish login"
+			"nothing main"
+		;
+	}
+
+
+	#user-info,
+	#login {
+		align-items: center;
+	}
+}

@@ -1,0 +1,26 @@
+/*
+	font-family: 'Merriweather', serif;
+    font-family: 'Squada One', cursive;
+*/
+.post {
+	font-family: 'Merriweather', sans-serif;
+	line-height: 3em;
+}
+.post-text {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 300%;
+}
+
+.post-info {
+	font-family: 'Squada One', cursive;
+}
+.post-author {
+	color: black;
+	font-size:120%;
+	font-family: 'Squada One', cursive;
+}
+
+.post-date {
+	color: gray;
+	
+}

@@ -1,0 +1,12 @@
+/* typographic pairing 1 */
+@import url('https://fonts.googleapis.com/css?family=Lacquer|Montserrat|Roboto&display=swap');
+
+
+@import "css/main.css";
+@import "css/grid.css";
+@import "css/typography.css";
+@import "css/color.css";
+@import "css/post.css";
+@import "css/profile.css";
+@import "css/create.css";
+@import "css/user.css";

@@ -1,0 +1,77 @@
+@media (min-width:601px) {
+  /*Anything above 600 pixels*/
+  body{
+    background-color:yellow;
+  }
+  #container{
+    width:1080px;
+    margin: 0px auto;
+    background-color:yellow;
+    display:grid;
+    grid-template-rows: max-content max-content max-content max-content;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  #heading{
+    grid-row:1;
+    grid-column: 1 / span 12;
+  }
+  #login{
+    grid-row:2;
+    grid-column: 1 / span 6;
+  }
+  #user-info{
+    grid-row:2;
+    grid-column: 7 / span 6;
+  }
+  #write-post{
+    grid-row:3;
+    grid-column:1 / span 12;
+  }
+	#posts{
+    grid-row:4;
+    grid-column:1 / span 12;
+  }
+}
+
+@media (min-width:401px) and (max-width:900px){
+    /* tablets*/
+  body{
+    background-color:pink;
+  }
+  #container{
+    background-color:yellow;
+    display:grid;
+    grid-template-rows: 10em 4em 10em max-content;
+    grid-template-columns: repeat(6, 1fr);
+	height: auto;
+  }
+  #heading{
+    grid-row: 1;
+    grid-column:1 / span 4;  
+  }
+  #user-info{
+    grid-row:1;
+    grid-column:5/ span 1;
+  }
+  #login{
+    grid-row:2;
+    grid-column: 1/ span 6;
+  }
+  #write-post{
+    grid-row:3;
+    grid-column:1 / span 12;
+  }
+	#posts{
+    grid-row:4;
+    grid-column:1 / span 12;
+	font-size: calc(16px + 6 * ((300vw - 400px) / 600));
+	}
+}
+@media (max-width:400px){
+  /* mobile phones*/
+  body{
+    background-color:skyblue;
+    display:flex;
+	flex-direction: column;
+	height: auto;
+	}

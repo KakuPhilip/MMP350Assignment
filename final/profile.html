@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<title>MMP 350</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-storage.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+  		apiKey: "AIzaSyDeQNU__1qdzxbvIkB4VLPmXObM3qhqV5Y",
+  		authDomain: "fall-9faf9.firebaseapp.com",
+  		databaseURL: "https://fall-9faf9-default-rtdb.firebaseio.com",
+  		projectId: "fall-9faf9",
+  		storageBucket: "fall-9faf9.appspot.com",
+  		messagingSenderId: "1031963984950",
+  		appId: "1:1031963984950:web:e3f11efb2fefd12e674497",
+  		measurementId: "G-L4S34XXCFW"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="title">
+			<h1><a href="index.html">BMCC TCG CLUB</a></h1>
+		</div>
+
+		<div id="user-info">
+			<p id="user-name"></p>
+			<a id="edit-profile-link">Edit Profile</a>
+			<button id="logout-button">Logout</button>
+		</div>
+
+		<div id="login">
+			<input id="login-email" type="text" placeholder="Email">
+			<input id="login-password" type="password" placeholder="Password">
+			<button id="login-button">Login</button>
+			<p id="login-message"></p>
+			<p><a href="create.html">Create a new account</a></p>
+		</div>
+
+		
+		<div id="profile">
+
+			<img id="profile-image" src="img/egg.jpg">
+			<input type="file" id="profile-image-input">
+			<button id="update-profile-image">Upload Profile Image</button>
+
+			<input id="profile-display-name" placeholder="User name">
+			<textarea id="profile-bio" placeholder="Add your bio"></textarea>
+			<button id="update-profile">Update Profile</button>
+		</div>
+		
+		
+	</div>
+
+	<script src="js/helpers.js"></script>
+	<script src="js/auth.js"></script>
+	<script src="js/profile.js"></script>
+	
+</body>
+</html>
+

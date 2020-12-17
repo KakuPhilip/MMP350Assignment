@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Publish Database Example</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <!-- We are also adding the auth.js SDK-->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <!-- And the database.js SDK-->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+  	apiKey: "AIzaSyDeQNU__1qdzxbvIkB4VLPmXObM3qhqV5Y",
+  	authDomain: "fall-9faf9.firebaseapp.com",
+  	databaseURL: "https://fall-9faf9-default-rtdb.firebaseio.com",
+  	projectId: "fall-9faf9",
+  	storageBucket: "fall-9faf9.appspot.com",
+  	messagingSenderId: "1031963984950",
+  	appId: "1:1031963984950:web:e3f11efb2fefd12e674497",
+  	measurementId: "G-L4S34XXCFW"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	</script>
+</head>
+<body>
+	<div id="container">
+
+		<div id="heading">
+			<h1>Publishing a Post to a Database Example</h1>
+			<h4>MMP 350 Fall 2020</h4>
+		</div>
+
+		<!-- elements to let users login -->
+		<div id="login">
+        	<input type="text" id="login-email" placeholder="Email">
+        	<input type="password" id="login-password" placeholder="Password">
+        	<button id="login-button">Login</button>
+        	<p id="login-message"></p>
+            <p><a href="create.html">Create a new account</a>.</p>
+        </div>
+
+        <!-- elements in case user is logged in -->
+        <div id="user-info">
+        	Hello
+        	<div id ="user-name"></div>
+        	<button id="logout-button">Log Out</button>
+        </div>
+
+		<!-- elements to let users write a new post -->
+		<div id="write-post">
+			<div>
+				<textarea id="post-body" placeholder="What's on your mind?"></textarea></div>
+			<div>
+				<button id="submit-post">Publish</button>
+			</div>
+		</div>
+
+		<!-- elements to show the posts -->
+		<div id="posts">
+			<div class="post">
+			</div>
+		</div>
+
+	</div> <!-- end of container -->
+
+	<!-- Scripts -->
+	<script src="js/helpers.js"></script>
+	<script src="js/publish.js"></script>
+	<script src="js/auth.js"></script>
+	<script src="js/displayPosts.js"></script>
+
+	<script>
+		fb.loadPosts();
+	</script>
+</body>
+</html>

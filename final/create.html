@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>MMP 350</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+  		apiKey: "AIzaSyDeQNU__1qdzxbvIkB4VLPmXObM3qhqV5Y",
+  		authDomain: "fall-9faf9.firebaseapp.com",
+  		databaseURL: "https://fall-9faf9-default-rtdb.firebaseio.com",
+  		projectId: "fall-9faf9",
+  		storageBucket: "fall-9faf9.appspot.com",
+  		messagingSenderId: "1031963984950",
+  		appId: "1:1031963984950:web:e3f11efb2fefd12e674497",
+  		measurementId: "G-L4S34XXCFW"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="title">
+			<h1><a href="index.html">BMCC TCG CLUB</a></h1>
+		</div>
+		
+		<div id="sign-up">
+			<input id="sign-up-username" type="text" placeholder="Username">
+			<input id="sign-up-email" type="text" placeholder="Email">
+			<input id="sign-up-password" type="password" placeholder="Password">
+			<button id="sign-up-button">Sign Up</button>
+			<p id="sign-up-message"></p>
+		</div>
+	</div>
+
+	<script src="js/helpers.js"></script>
+	<script src="js/create.js"></script>
+</body>
+</html>
+

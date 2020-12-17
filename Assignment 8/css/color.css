@@ -1,0 +1,36 @@
+:root {
+	--main-hue: 100;
+	--offset: 30;
+
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+		
+	--accent-one-hue: calc(var(--main-hue) - var(--offset));
+	--accent-two-hue: calc(var(--main-hue) + var(--offset));
+	--accent-one: hsl(var(--accent-one-hue), 50%, 50%);
+	--accent-two: hsl(var(--accent-two-hue), 50%, 50%);
+	
+	--complement: var(--accent-two);
+	--button-dark: hsl(var(--accent-one-hue), 60%, 25%);
+	--Main-bg: hsl(var(--accent-one-hue), 70%, 35%);
+	--link-color: var(--main-color);
+}
+		
+* {
+	color: var(--text-color);
+}
+
+#heading {
+	color: var(--main-color);
+}
+
+#posts {
+	background-color: var(--accent-one);
+}
+
+button {
+	background-color: var(--complement);
+}
+
+a {
+	color: var(--link-color);
+}

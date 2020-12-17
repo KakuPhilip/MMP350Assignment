@@ -1,0 +1,47 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Lacquer', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+.post {
+	font-family: 'Lacquer', sans-serif;
+	line-height: 3em;
+}
+
+.post-text {
+	font-size: 3.25em;
+	font-family: 'Montserrat', sans-serif;
+	word-spacing: 0.25em;
+	line-height: 1.25em;
+}
+
+.post-info {
+	font-size: 1.5em;
+	color: gray;
+}
+
+.post-author {
+	color: darkblue;
+	font-family:'Roboto', sans-serif;
+}
+	
+* {
+	font-family: 'Lacquer', sans-serif;
+}
+
+
+#post-body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 150%;
+}
+
+#submit-post {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 200%;
+}
+
+#heading{
+	font-size: 100%;
+}

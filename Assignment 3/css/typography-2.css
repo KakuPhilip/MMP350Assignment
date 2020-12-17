@@ -1,0 +1,32 @@
+/*
+font-family: 'Akronim', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+
+.post,
+a {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.post-text {
+	font-size: 300%;
+	color:gray;
+	font-family: 'Akronim', cursive;
+	line-height: 75%
+}
+
+.post-info{
+	padding-top:30px;
+}
+
+.post-author {
+	color: black;
+	font-size:120%;
+	font-family: 'Nunito', cursive;
+}
+
+.post-date {
+	color: gray;
+	
+}
